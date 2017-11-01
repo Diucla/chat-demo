@@ -1,9 +1,10 @@
 <template>
 
-    <div>
+    <div class="chat-composer">
 
-        <p> {{ message }} </p>
-        <small>{{ user }}</small>
+        <input class="" type="text" placeholder="Start Typing here your message...">
+
+        <button class="btn btn-primary">Send</button>
 
     </div>
 

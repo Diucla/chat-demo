@@ -2,15 +2,15 @@
 
 @section('content')
 
-    <h1>Chat</h1>
+    <div class=" panel panel-default col-md-offset-1 col-md-8">
 
-    <chat-message></chat-message>
+        <h1>Chat</h1>
 
-    <chat-log></chat-log>
+        <chat-log></chat-log>
 
-    <chat-composer></chat-composer>
+        <chat-composer></chat-composer>
 
-    <example></example>
+    </div>
 
 
 @endsection
