@@ -1,5 +1,7 @@
 <?php
 
+use App\Events\MessagePosted;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,6 +43,11 @@ Route::post('/api/messages', function (){
         'message' => request()->get('message')
     ]);
     // Announce that a new message has been posted
+
+    event(new MessagePosted());
+
+
+
 
     return ['status' => 'OK'];
 
