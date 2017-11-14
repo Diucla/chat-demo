@@ -4,8 +4,9 @@
 
 		<chat-message v-for="message, key in messages" :message="message" :key="message.id"></chat-message>
 
-	</div>
+		<div class="empty" v-show="messages.lengh == 0">Nothing to show</div>
 
+	</div>
 
 </template>
 
@@ -22,5 +23,10 @@
 <style>
 	.chat-log .chat-message:nth-child(even) {
 		background-color: #ccc;
+	}
+
+
+	.empty{
+
 	}
 </style>

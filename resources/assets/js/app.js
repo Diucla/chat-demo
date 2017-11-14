@@ -27,26 +27,27 @@ const app = new Vue({
     el: '#app',
 
     data: {
-        messages:[
-
-            {
-                message: 'Hey!',
-                user: "John Doe"
-            },
-
-            {
-                message: 'Hello',
-                user: "Claud Sumbus"
-            }
-
-        ]
+        messages:[]
     },
 
     methods:{
         addMessage(message){
             // Add to existing messages
-            this.messages.push(message)
+            this.messages.push(message);
+
+            axios.post('/api/messages', message).then(response => {
+                // Do whatever;
+            })
         }
     },
 
+    created(){
+
+        axios.get('/api/messages').then(response => {
+
+            this.messages = response.data;
+
+        });
+
+    }
 });

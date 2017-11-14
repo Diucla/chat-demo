@@ -19,7 +19,29 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
 Route::get('/chat', function (){
     return view('chat');
-});
+})->middleware('auth');
+
+
+//==============================
+//==============================
+
+Route::get('/api/messages', function (){
+    return App\Message::with('user')->get();
+})->middleware('auth');
+
+
+//
+Route::post('/api/messages', function (){
+
+    // Store the new message
+    $user = Auth::user();
+    $message = $user->messages()->create([
+        'message' => request()->get('message')
+    ]);
+    // Announce that a new message has been posted
+
+    return ['status' => 'OK'];
+
+})->middleware('auth');
