@@ -1,10 +1,12 @@
-<template>
+<template  lang="html">
 
     <div class="chat-composer">
 
-        <input class="" type="text" placeholder="Start Typing here your message...">
-
-        <button class="btn btn-primary">Send</button>
+        <div class="form-group col-xs-10">
+          <label for="comment">{{user}}:</label>
+          <textarea  placeholder="Start Typing here your message..." class="form-control" rows="4" id="comment"></textarea>
+          <button class="btn btn-primary">Send</button>
+        </div>
 
     </div>
 
@@ -25,5 +27,11 @@
 </script>
 
 <sctyle lang="css">
+
+    .chat-messsage {
+
+    }
+
+
 
 </sctyle>

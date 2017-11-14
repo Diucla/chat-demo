@@ -1,8 +1,8 @@
 <template>
 
-    <div>
+    <div class="chat-mssage p-2 mb-4">
 
-        <p> {{ message }} </p>
+        <p class="mb-4"> {{ message }} </p>
         <small>{{ user }}</small>
 
     </div>
