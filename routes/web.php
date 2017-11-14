@@ -38,16 +38,13 @@ Route::get('/api/messages', function (){
 Route::post('/api/messages', function (){
 
     // Store the new message
-    $user = Auth::user();
+    $message = $user = Auth::user();
     $message = $user->messages()->create([
         'message' => request()->get('message')
     ]);
     // Announce that a new message has been posted
 
-    event(new MessagePosted());
-
-
-
+    event(new MessagePosted($message, $user));
 
     return ['status' => 'OK'];
 

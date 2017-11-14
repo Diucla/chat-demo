@@ -13,10 +13,7 @@
 
 <script>
     export default{
-
         props:['message'],
-        data(){}
-
     }
 </script>
 

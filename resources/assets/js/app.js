@@ -49,5 +49,13 @@ const app = new Vue({
 
         });
 
+        Echo.join('chatroom')
+            .here()
+            .joining()
+            .leaving()
+            .listen('MessagePosted', (e) => {
+                console.log(e)
+        });
+
     }
 });
