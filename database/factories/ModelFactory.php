@@ -22,3 +22,14 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+
+$factory->define(App\Message::class, function (Faker\Generator $faker) {
+    static $password;
+
+    return [
+        'subject' => $faker->name,
+        'message' => $faker->unique()->safeEmail,
+        'user_id' => $password ?: $password = bcrypt('secret'),
+    ];
+});

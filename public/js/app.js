@@ -1131,7 +1131,7 @@ var app = new Vue({
         });
 
         Echo.join('chatroom').here().joining().leaving().listen('MessagePosted', function (e) {
-            console.log(e);
+            console.log();
         });
     }
 });
@@ -1196,8 +1196,7 @@ window.Pusher = __webpack_require__(37);
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
   broadcaster: 'pusher',
   key: '7cf767b3db15884cfdd7',
-  cluster: 'ap2',
-  encrypted: true
+  cluster: 'ap2'
 });
 
 /***/ }),
