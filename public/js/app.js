@@ -42913,39 +42913,31 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: function data() {
+		return {
+
+			messages: [{
+				message: 'Hey!',
+				user: "John Doe"
+			}, {
+				message: 'Hey!',
+				user: "John Doe"
+			}]
+
+		};
+	}
+});
 
 /***/ }),
 /* 47 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "chat-log col-md-10" },
-    [
-      _c("chat-message"),
-      _vm._v(" "),
-      _c("chat-message"),
-      _vm._v(" "),
-      _c("chat-message")
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-45c0929c", module.exports)
-  }
-}
+throw new Error("Module build failed: SyntaxError: Unexpected token (1:174)\n    at Parser.pp$4.raise (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:2610:13)\n    at Parser.pp.unexpected (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:637:8)\n    at Parser.pp$3.parseExprAtom (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:2094:10)\n    at Parser.parseExprAtom (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:4372:24)\n    at Parser.pp$3.parseExprSubscripts (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1955:19)\n    at Parser.pp$3.parseMaybeUnary (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1932:17)\n    at Parser.pp$3.parseExprOps (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1874:19)\n    at Parser.pp$3.parseMaybeConditional (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1857:19)\n    at Parser.pp$3.parseMaybeAssign (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1832:19)\n    at Parser.pp$3.parsePropertyValue (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:2310:87)\n    at Parser.parseObj (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:4472:14)\n    at Parser.pp$3.parseExprAtom (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:2077:17)\n    at Parser.parseExprAtom (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:4372:24)\n    at Parser.pp$3.parseExprSubscripts (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1955:19)\n    at Parser.pp$3.parseMaybeUnary (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1932:17)\n    at Parser.pp$3.parseExprOps (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1874:19)\n    at Parser.pp$3.parseMaybeConditional (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1857:19)\n    at Parser.pp$3.parseMaybeAssign (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1832:19)\n    at Parser.pp$3.parsePropertyValue (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:2310:87)\n    at Parser.parseObj (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:4472:14)\n    at Parser.pp$3.parseExprAtom (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:2077:17)\n    at Parser.parseExprAtom (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:4372:24)\n    at Parser.pp$3.parseExprSubscripts (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1955:19)\n    at Parser.pp$3.parseMaybeUnary (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1932:17)\n    at Parser.pp$3.parseExprOps (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1874:19)\n    at Parser.pp$3.parseMaybeConditional (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1857:19)\n    at Parser.pp$3.parseMaybeAssign (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1832:19)\n    at Parser.pp$3.parseExprList (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:2528:20)\n    at Parser.pp$3.parseSubscripts (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1983:29)\n    at Parser.pp$3.parseExprSubscripts (D:\\life\\ProjectosLaravel\\chat-demo\\node_modules\\vue-template-es2015-compiler\\buble.js:1958:21)");
 
 /***/ }),
 /* 48 */
@@ -43042,7 +43034,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("textarea", {
-        staticClass: "form-control",
+        staticClass: "form-control mb-4",
         attrs: {
           placeholder: "Start Typing here your message...",
           rows: "4",
@@ -43050,7 +43042,9 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _c("button", { staticClass: "btn btn-primary" }, [_vm._v("Send")])
+      _c("button", { staticClass: "btn btn-primary pull-right px-5" }, [
+        _vm._v("Send")
+      ])
     ])
   ])
 }

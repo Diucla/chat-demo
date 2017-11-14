@@ -4,8 +4,8 @@
 
         <div class="form-group col-xs-10">
           <label for="comment">{{user}}:</label>
-          <textarea  placeholder="Start Typing here your message..." class="form-control" rows="4" id="comment"></textarea>
-          <button class="btn btn-primary">Send</button>
+          <textarea placeholder="Start Typing here your message..." class="form-control mb-4" rows="4" id="comment"></textarea>
+          <button class="btn btn-primary pull-right px-5">Send</button>
         </div>
 
     </div>

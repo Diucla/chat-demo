@@ -2,15 +2,26 @@
 
 @section('content')
 
-    <div class="panel white col-md-offset-1 col-md-8">
+    <div class="col-xs-12">
+        <div class="row  container">
 
-        <h1>Chat</h1>
+            <div class="col-xs-3 white">
+                <p>Sumbus</p>
+                <hr>
+            </div>
 
-        <chat-log></chat-log>
+            <div class="panel white col-md-offset-1 col-xs-6">
 
-        <chat-composer></chat-composer>
+                <h1>Chat</h1>
 
+                <chat-log></chat-log>
+
+                <chat-composer></chat-composer>
+
+            </div>
+
+
+        </div>
     </div>
-
 
 @endsection
