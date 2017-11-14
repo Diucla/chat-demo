@@ -14,9 +14,9 @@
 
                 <h1>Chat</h1>
 
-                <chat-log></chat-log>
+                <chat-log :messages="messages"></chat-log>
 
-                <chat-composer></chat-composer>
+                <chat-composer v-on:messagesent="addMessage"></chat-composer>
 
             </div>
 

@@ -2,12 +2,7 @@
 
 	<div class="chat-log col-md-10">
 
-		<div>
-			<chat-message v-for="message in messages" :message></chat-message>
-			<hr>
-		</div>
-
-
+		<chat-message v-for="message, key in messages" :message="message" :key="message.id"></chat-message>
 
 	</div>
 
@@ -15,33 +10,17 @@
 </template>
 
 <script>
-export default{
 
-	data(){
-		return{
+    export default {
 
-			messages:[
+        props: ['messages']
 
-				{
-					message: 'Hey!',
-					user: "John Doe"
-				},
+    }
 
-				{
-					message: 'Hey!',
-					user: "John Doe"
-				}
-
-			]
-
-		}
-	}
-
-
-
-}
 </script>
 
-<sctyle lang="css">
-
-</sctyle>
+<style>
+	.chat-log .chat-message:nth-child(even) {
+		background-color: #ccc;
+	}
+</style>

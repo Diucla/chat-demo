@@ -1,9 +1,10 @@
 <template>
 
-    <div class="chat-mssage p-2 mb-4">
+    <div class="chat-mssage p-2 mb-0">
 
-        <p class="mb-4"> {{ message }} </p>
-        <small>{{ user }}</small>
+        <p class="mb-2"> {{ message.message }} </p>
+        <small class="laranja-text">{{ message.user }}</small>
+        <hr>
 
     </div>
 
@@ -13,12 +14,8 @@
 <script>
     export default{
 
-        data(){
-            return{
-                message : "This is some message ",
-                user : "John Doe"
-            }
-        }
+        props:['message'],
+        data(){}
 
     }
 </script>
