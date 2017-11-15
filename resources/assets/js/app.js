@@ -47,15 +47,22 @@ const app = new Vue({
 
             this.messages = response.data;
 
-        });
+        })
+
 
         Echo.join('chatroom')
-            .here()
-            .joining()
-            .leaving()
+            // .here()
+            // .joining()
+            // .leaving()
+
             .listen('MessagePosted', (e) => {
-                console.log()
-        });
+        //     this.messages.push({
+        //     message: e.message.message,
+        //     user: e.user
+        // });
+
+            console.log(e);
+    });
 
     }
 });

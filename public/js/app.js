@@ -1130,8 +1130,18 @@ var app = new Vue({
             _this.messages = response.data;
         });
 
-        Echo.join('chatroom').here().joining().leaving().listen('MessagePosted', function (e) {
-            console.log();
+        Echo.join('chatroom')
+        // .here()
+        // .joining()
+        // .leaving()
+
+        .listen('MessagePosted', function (e) {
+            //     this.messages.push({
+            //     message: e.message.message,
+            //     user: e.user
+            // });
+
+            console.log(e);
         });
     }
 });
